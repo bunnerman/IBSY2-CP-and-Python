@@ -4,7 +4,6 @@ using namespace std;
 int main()
 {
 	int r, c;
-	int n;
 	
 	cout << "Enter rows x columns: ";
 	cin >> r;
