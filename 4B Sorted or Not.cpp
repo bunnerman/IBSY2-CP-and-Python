@@ -16,12 +16,12 @@ int main()
 	{
 		if (ary[i] > ary[i + 1])
 		{
-			cout << "Unsorted List";
+			cout << "Unsorted Array";
 			return 0; 
 		}
 	}
 
-	cout << "Sorted List";
+	cout << "Sorted Array";
 
 	return 0;		
 }
