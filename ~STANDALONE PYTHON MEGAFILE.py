@@ -582,3 +582,233 @@ print(c)
 
 #-------- EXPERIMENT SEPARATOR IV --------#
 #---- PROGRAM SEPARATOR ----#
+numers = (1, 2, 3)
+print(numbers)
+
+#---- PROGRAM SEPARATOR ----#
+a = (1)
+b = (1, )
+print(a)
+print(b)
+
+#---- PROGRAM SEPARATOR ----#
+t = (1, 2, 3, 4)
+l = list(t)
+l.append(5)
+print("Modified List:", l)
+t = tuple(l)
+print("List->Tuple:", t)
+
+#---- PROGRAM SEPARATOR ----#
+n = (15, 3, 8, 22, 5, 13)
+
+max = min = n[0]
+for n in n:
+	if n > max:
+		max = n
+	elif n < min:
+		min = n
+print("Max:", max)
+print("Min:", min)
+
+#---- PROGRAM SEPARATOR ----#
+p = [("a", 10), ("b", 20), ("c", 30)]
+d = dict(p)
+print("Dictionary:", d)
+
+#---- PROGRAM SEPARATOR ----#
+t = (1, 2, 3, 2, 4, 1, 2)
+freq = {}
+for item in t:
+	freq[item] = freq.get(item, 0) + 1
+print("Frequency: ", freq)
+
+#---- PROGRAM SEPARATOR ----#
+sq = tuple(x ** 2 for x in range(1, 4))
+print("Squared Tuple:", sq)
+
+#---- PROGRAM SEPARATOR ----#
+t1 = (1, 2, 3)
+t2 = (4, 5, 6)
+combined = t1 + t2
+print("Concatenated Tuple:", combined)
+repeated = t1 * 2
+print("Repeated Tuple:", repeated)
+print("Is 2 in t1?", 2 in t1)
+print("Is 10 not in t1?", 10 not in t1)
+print("Length of tuple:", len(t1))
+print()
+colors = ("red", "green", "blue", "yellow", "purple")
+print("First element:", colors[0])
+print("Third element:", colors[2])
+print("Last element:", colors[-1])
+print("Colors[0:3]:", colors[0:3])
+print("Colors[2:]:", colors[2:])
+print("Colors[:4]:", colors[:4])
+print("Colors[-3:]:", colors[-3:])
+print()
+nums = (15, 8, 22, 5, 13, 30)
+print("Tuple:", nums)
+print("Length:", len(nums))
+print("Maximum:", max(nums))
+print("Minimum:", min(nums))
+print("Sum:", sum(nums))
+print("Sorted (as list):", sorted(nums))
+print()
+
+#------ QUESTION AREA SEPARATOR ------#
+#----PROGRAM SEPARATOR ----#
+t = (1, 2, 3, 4)
+t2 = (1, )
+t3 = 1, 2, 3
+l = [1, 2, 3]
+t4 = tuple(l)
+t5 = tuple(x for x in range(1, 5))
+
+#---- PROGRAM SEPARATOR ----#
+nt = (1, (2, 3, 4))
+print(nt[1][2])
+
+#---- PROGRAM SEPARATOR ----#
+t1 = (1, 2, 3)
+t2 = (4, 5)
+t3 = t1 + t2
+print(t3)
+t4 = (4, ) * 3
+print(t4)
+t5 = (8, 2, 4, 1, 3)
+if 4 in t:
+	print("4 is present")
+else:
+	print("4 is absent")
+
+#---- PROGRAM SEPARATOR ----#
+t = (1, 2, 3)
+t.append(4)
+
+#---- PROGRAM SEPARATOR ----#
+t = (1, 2, [3, 4])
+t[2][0] = "not 3 anymore"
+print(t)
+
+#---- PROGRAM SEPARATOR ----#
+t = (1, 2, 3)
+print(t[0])
+print(t[-1])
+print(t[-2])
+print(t[::])
+print(t[1:4:2])
+print(t[:3])
+
+#---- PROGRAM SEPARATOR ----#
+t = (1, 2, 3, (4, 5))
+print(t[3][0])
+print(t[2:4:])
+
+#---- PROGRAM SEPARATOR ----#
+t = (1, 2, 3, 4, 5)
+print(len(t))
+print(max(t))
+print(min(t))
+print(sum(t))
+print(sorted(t))
+
+#---- PROGRAM SEPARATOR ----#
+t = (8, 2, 4, 1, 3)
+ts = sorted(t)
+print(ts)
+
+#---- PROGRAM SEPARATOR ----#
+t = (8, 2, 4, 1, 3)
+print(max(t))
+print(min(t))
+print(len(t))
+print(sum(t))
+
+#-------- EXPERIMENT SEPARATOR V --------#
+#---- PROGRAM SEPARATOR ----#
+func = lambda x: "Positive" if x > 0 else "Negative" if x < 0 else "Zero"
+print(func(5))
+print(func(-3))
+print(func(0))
+
+#---- PROGRAM SEPARATOR ----#
+func = [lambda arg = x: arg * 10 for x in range(1, 5)]
+for i in func:
+	print(i())
+
+#---- PROGRAM SEPARATOR ----#
+calc = lambda x, y: (x + y, x * y)
+res = calc(3, 4)
+print(res)
+
+#---- PROGRAM SEPARATOR ----#
+s = {1, 2, 3}
+s = set([1, 2, 3])
+s = set()
+
+#---- PROGRAM SEPARATOR ----#
+s = {10, 20, 30}
+print(s)
+print(type(s))
+
+#---- PROGRAM SEPARATOR ----#
+s = set(["a", "b", "c"])
+print(s)
+
+#---- PROGRAM SEPARATOR ----#
+s = {"Geeks", "for", "Geeks"}
+print(s)
+s[1] = "Hello" # ERROR LINE
+print(s)
+
+#---- PROGRAM SEPARATOR ----#
+s = {"a", "b", "c"}
+s.add("d")
+s.remove("c")
+print(s)
+
+#---- PROGRAM SEPARATOR ----#
+a = {"x", "y"}
+b = {"y", "z"}
+u = a.union(b)
+print(a | b)
+print(u)
+
+#---- PROGRAM SEPARATOR ----#
+a = {1, 2, 3}
+b = {2, 3, 4}
+i = a.intersection(b)
+print(a & b)
+print(i)
+
+#---- PROGRAM SEPARATOR ----#
+a = {1, 2, 3}
+b = {2, 3, 4}
+d = a.difference(b)
+print(a - b)
+print(d)
+
+#---- PROGRAM SEPARATOR ----#
+a = {1, 2, 3}
+b = {2, 3, 4}
+print(a ^ b)
+
+#---- PROGRAM SEPARATOR ----#
+s = {1, 2, 3}
+s.clear()
+print(s)
+
+#---- PROGRAM SEPARATOR ----#
+A = {1, 2}
+B = {1, 2, 3, 4}
+print(A.issubset(B))
+print(B.issuperset(A))
+print(3 in {1, 2, 3})
+for item in {1, 2, 3}:
+	print(item)
+s = {x * x for x in range(5)}
+print(s)
+
+#------ QUESTION AREA SEPARATOR ------#
+#---- PROGRAM SEPARATOR ----#
