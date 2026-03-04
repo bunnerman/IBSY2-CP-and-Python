@@ -1,4 +1,4 @@
-#-------- EXPERIMENT SEPARATOR I --------#
+#------------------------ EXPERIMENT SEPARATOR I ------------------------#
 #---- PROGRAM SEPARATOR ----#
 X = 10
 Y = 20
@@ -86,7 +86,7 @@ print(x)
 print(y)
 print(z)
 
-#-------- EXPERIMENT SEPARATOR II --------#
+#------------------------ EXPERIMENT SEPARATOR II ------------------------#
 #---- PROGRAM SEPARATOR ----#
 numbers = [1, 2, 3, 4, 5]
 for num in numbers:
@@ -331,11 +331,11 @@ if not found:
 
 #---- PROGRAM SEPARATOR ----#
 n = int(input("Enter n: "))
-sum = 0
+sumInt = 0
 while n != 0:
-	sum += n % 10
+	sumInt += n % 10
 	n //= 10
-print("Sum is", sum)
+print("Sum is", sumInt)
 
 #---- PROGRAM SEPARATOR ----#
 for i in range(1, 3+1):
@@ -414,7 +414,7 @@ if (yr % 400 == 0) or (yr % 4 == 0 and yr % 100 != 0):
 else:
 	print("Not Leap Year")
 
-#-------- EXPERIMENT SEPARATOR III --------#
+#------------------------ EXPERIMENT SEPARATOR III ------------------------#
 #----PROGRAM SEPARATOR ----#
 a = [1, 'hello', 3.14, True]
 print(a)
@@ -562,7 +562,7 @@ a.extend((9, 5))
 #---- PROGRAM SEPARATOR ----#
 a = b = [0, 1, 2]
 a.append((3, 4))
-a.append(5, 6)
+a.extend((5, 6))
 print(a)
 
 #---- PROGRAM SEPARATOR ----#
@@ -580,7 +580,7 @@ a.clear()
 print(b)
 print(c)
 
-#-------- EXPERIMENT SEPARATOR IV --------#
+#------------------------ EXPERIMENT SEPARATOR IV ------------------------#
 #---- PROGRAM SEPARATOR ----#
 numers = (1, 2, 3)
 print(numbers)
@@ -602,14 +602,14 @@ print("List->Tuple:", t)
 #---- PROGRAM SEPARATOR ----#
 n = (15, 3, 8, 22, 5, 13)
 
-max = min = n[0]
+maxNum = minNum = n[0]
 for n in n:
-	if n > max:
-		max = n
-	elif n < min:
-		min = n
-print("Max:", max)
-print("Min:", min)
+	if n > maxNum:
+		maxNum = n
+	elif n < minNum:
+		minNum = n
+print("Max:", maxNum)
+print("Min:", minNum)
 
 #---- PROGRAM SEPARATOR ----#
 p = [("a", 10), ("b", 20), ("c", 30)]
@@ -684,7 +684,7 @@ else:
 
 #---- PROGRAM SEPARATOR ----#
 t = (1, 2, 3)
-t.append(4)
+# ERROR LINE t.append(4)
 
 #---- PROGRAM SEPARATOR ----#
 t = (1, 2, [3, 4])
@@ -725,9 +725,9 @@ print(min(t))
 print(len(t))
 print(sum(t))
 
-#-------- EXPERIMENT SEPARATOR V --------#
+#------------------------ EXPERIMENT SEPARATOR V ------------------------#
 #---- PROGRAM SEPARATOR ----#
-func = lambda x: "Positive" if x > 0 else "Negative" if x < 0 else "Zero"
+func = lambda x: "+ve" if x > 0 else "-ve" if x < 0 else "0"
 print(func(5))
 print(func(-3))
 print(func(0))
@@ -759,7 +759,7 @@ print(s)
 #---- PROGRAM SEPARATOR ----#
 s = {"Geeks", "for", "Geeks"}
 print(s)
-s[1] = "Hello" # ERROR LINE
+# ERROR LINE s[1] = "Hello"
 print(s)
 
 #---- PROGRAM SEPARATOR ----#
