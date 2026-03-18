@@ -29,8 +29,11 @@ int main()
                 break;
         }
 
-        if (hashTable[h] == value) // duplicates mapped to same
-            continue;
+        if (hashTable[h] == value) // duplicates mapped to same slot
+        {
+			cout << value << " MAPPED TO SAME INDEX\n"	;
+			continue;
+		}
         else if (hashTable[h] == -1)
             hashTable[h] = value;
         else
