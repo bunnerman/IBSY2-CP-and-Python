@@ -21,7 +21,7 @@ int main()
 
 		if ((mid == 0 || ary[mid - 1] <= ary[mid]) && (mid == n - 1 || ary[mid] >= ary[mid + 1]))
 			break;
-		else if (ary[mid - 1] > ary[mid])
+		else if (mid > 0 && ary[mid - 1] > ary[mid])
 			high = mid - 1;
 		else
 			low = mid + 1;
