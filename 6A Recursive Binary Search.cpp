@@ -17,11 +17,14 @@ int recBinarySearch(int* ary, int low, int high, int key)
 int main() 
 { 
 	int n; 
+	cout << "Enter no. of elements: ";
 	cin >> n; 
 	int ary[n]; 
-	for (int i = 0; i < n; i++) 
-		cin >> ary[i]; 
-	int key; 
+	cout << "Enter " << n << " elements: "; 
+	for (int& i : ary) 
+		cin >> i; 
+	int key;
+	cout << "Enter key: "; 
 	cin >> key; 
 	
 	int result = recBinarySearch(ary, 0, n - 1, key); 
