@@ -10,8 +10,8 @@ int main()
 
     cout << "Enter " << n << " elements (ascending order): ";
     int ary[n];
-    for (int i = 0; i < n; i++)
-        cin >> ary[i];
+    for (int &i : ary)
+        cin >> i;
 
 	int key;
 	cout << "Enter key: ";
