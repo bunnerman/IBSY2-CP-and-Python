@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-bool isSubSeq(string s1, string s2)
+bool isSubSeq(string s1, string s2) // is s1 present in s2?
 {
 	int m = s1.size();
 	int n = s2.size();
