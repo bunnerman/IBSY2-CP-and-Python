@@ -10,7 +10,7 @@
 
 using namespace std; 
 
-int nthSmallest(int arr[], int n, int k)
+int kthSmallest(int arr[], int n, int k)
 {
 	int max = arr[0];
 	for (int i = 0; i < n; i++)
@@ -40,7 +40,7 @@ int main()
 	int arr[] = {12, 3, 5, 7, 10};
 	int n = sizeof(arr) / sizeof(arr[0]);
 	int k = 2;
-	cout << nthSmallest(arr, n, k);
+	cout << kthSmallest(arr, n, k);
 
 	return 0;
 }
