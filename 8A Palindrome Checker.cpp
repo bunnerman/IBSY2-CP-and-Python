@@ -20,8 +20,5 @@ int main()
 	string str;
 	cout << "Enter a string: ";
 	cin >> str;
-	if (isPalindrome(str))
-		cout << "Is Palindrome";
-	else
-		cout << "Isn't Palindrome";
+	isPalindrome(str) ? cout << "IS palindrome" : cout << "IS NOT palindrome"; 
 }
