@@ -16,6 +16,7 @@ public:
             return;
         }
         ary[top++] = n;
+		cout << "EQ " << ary[top - 1] << "\n";
     }
 
     void deqFrnt()
