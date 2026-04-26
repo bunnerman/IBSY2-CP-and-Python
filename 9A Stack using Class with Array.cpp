@@ -42,10 +42,10 @@ int main()
 	arr.push(1);
 	arr.push(2);
 	arr.push(3);
+	arr.pop();
 	arr.push(4);
 	arr.push(5);
 	arr.push(6);
 	arr.pop();
 	arr.display();
 }
-
